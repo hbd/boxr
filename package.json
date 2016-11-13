@@ -151,6 +151,8 @@
   "dependencies": {
     "electron-debug": "^1.0.1",
     "font-awesome": "^4.7.0",
+    "keypress": "^0.2.1",
+    "noble": "^1.7.0",
     "react": "^15.3.2",
     "react-dom": "^15.3.2",
     "react-redux": "^4.4.5",
