@@ -1,6 +1,8 @@
 // @flow
 export const INCREMENT_COUNTER = 'INCREMENT_COUNTER';
 export const DECREMENT_COUNTER = 'DECREMENT_COUNTER';
+export const RESET_COUNTER = 'RESET_COUNTER';
+
 
 export function increment() {
   return {
@@ -11,6 +13,12 @@ export function increment() {
 export function decrement() {
   return {
     type: DECREMENT_COUNTER
+  };
+}
+
+export function reset() {
+  return {
+    type: RESET_COUNTER
   };
 }
 

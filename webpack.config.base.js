@@ -37,6 +37,9 @@ export default validate({
     // put your node 3rd party libraries which can't be built with webpack here
     // (mysql, mongodb, and so on..)
     'noble',
-    'keypress'
+    'keypress',
+    'd3',
+    'rd3',
+    'react-rt-chart'
   ]
 });
