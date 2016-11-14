@@ -39,7 +39,7 @@ export default validate({
     'noble',
     'keypress',
     'd3',
-    'rd3',
+    'react-d3-library',
     'react-rt-chart'
   ]
 });

@@ -9,11 +9,9 @@ import BleUart from './ble-uart';
 import keypress from 'keypress';
 
 /* Charts */
-import rd3 from 'rd3';
 
 /* Intensity */
 import Thermometer from 'react-thermometer';
-
 
 var uart = {
     serviceUUID: '6e400001-b5a3-f393-e0a9-e50e24dcca9e',
@@ -68,7 +66,6 @@ class Counter extends Component {
 
   componentDidMount() {
     var that = this;
-
 
     setInterval(function () {
       if ((new Date().getTime() - time_mark) > 500) {
@@ -245,23 +242,19 @@ class Counter extends Component {
                 time_mark = new Date().getTime();
                 combo_detect = 3;
               }
-            else
-              {
+            else {
                 console.log("Combo 2");
                 combo_detect = 0;
               }
           }
-        else if (combo_detect == 3)
-          {
-            if ((punches[1] == 'R') && (punches[2] == 'U'))
-              {
+        else if (combo_detect == 3) {
+            if ((punches[1] == 'R') && (punches[2] == 'U')) {
                 console.log("Combo 4");
 		that.state.comboMove = 'Combo 4!!!!'
 		snd.play();
                 combo_detect = 0;
               }
-            else
-              {
+            else {
                 console.log("Combo 3");
                 combo_detect = 0;
               }
@@ -354,7 +347,7 @@ class Counter extends Component {
             min={0}
             max={100}
             width={50}
-            height={500}
+            height={750}
             backgroundColor={'white'}
             fillColor={'red'}
             current={(this.state.leftIntensity > 0) ? this.state.leftIntensity : 0}
@@ -365,7 +358,7 @@ class Counter extends Component {
             min={0}
             max={100}
             width={50}
-            height={500}
+            height={750}
             backgroundColor={'white'}
             fillColor={'red'}
             current={(this.state.rightIntensity > 0) ? this.state.rightIntensity : 0}
