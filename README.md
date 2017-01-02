@@ -8,6 +8,8 @@ View a live demo of Boxr [here](https://www.facebook.com/MajorLeagueHacking/vide
 
 For a full description, look [here](https://devpost.com/software/boxr)
 
+-------------------------------------------
+
 ![](./erb-logo.png)
 
 > Live editing development on desktop app
